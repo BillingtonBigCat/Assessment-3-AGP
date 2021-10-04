@@ -1,3 +1,3 @@
-D:\Uni\Advanced Games 2021\Assessment 2\Attempt 2\Week8StartingPoint\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h
-D:\Uni\Advanced Games 2021\Assessment 2\Attempt 2\Week8StartingPoint\Week8StartingPoint\Source\AdvGamesProgramming\FirstPersonAnimInstance.h
-D:\Uni\Advanced Games 2021\Assessment 2\Attempt 2\Week8StartingPoint\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\FirstPersonAnimInstance.generated.h
+D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h
+D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Source\AdvGamesProgramming\FirstPersonAnimInstance.h
+D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\FirstPersonAnimInstance.generated.h
