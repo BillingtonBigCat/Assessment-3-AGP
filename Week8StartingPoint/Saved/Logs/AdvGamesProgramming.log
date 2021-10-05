@@ -1315,3 +1315,4 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.10.05-07.55.11:434][477]AssetCheck: New page: Asset Save: multiple assets
 [2021.10.05-07.55.11:434][477]LogContentValidation: Display: Validating World /Game/Levels/Assesment3Map.Assesment3Map
 [2021.10.05-07.55.11:435][477]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Levels/Assesment3Map_BuiltData.Assesment3Map_BuiltData
+[2021.10.05-08.41.14:250][579]LogSlate: Took 0.016409 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
