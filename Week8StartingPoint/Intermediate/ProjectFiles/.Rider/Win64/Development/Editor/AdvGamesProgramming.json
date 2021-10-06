@@ -65,6 +65,13 @@
 			]
 		},
 		{
+			"File": "C:\\Program Files\\Epic Games\\UE_4.24\\Engine\\Plugins\\Marketplace\\RiderSourceCodeAccess\\Binaries\\Win64\\UE4Editor-RiderSourceCodeAccess.dll",
+			"Type": "DynamicLinkLibrary",
+			"Modules": [
+				"RiderSourceCodeAccess"
+			]
+		},
+		{
 			"File": "C:\\Program Files\\Epic Games\\UE_4.24\\Engine\\Plugins\\2D\\Paper2D\\Binaries\\Win64\\UE4Editor-Paper2D.dll",
 			"Type": "DynamicLinkLibrary",
 			"Modules": [
@@ -3721,6 +3728,40 @@
 			"ApiDefinitions": [
 				"LAUNCH_VTABLE=",
 				"LAUNCH_API="
+			],
+			"ShouldAddLegacyPublicIncludePaths": false
+		},
+		"RiderSourceCodeAccess": 
+		{
+			"Name": "RiderSourceCodeAccess",
+			"Directory": "C:\\Program Files\\Epic Games\\UE_4.24\\Engine\\Plugins\\Marketplace\\RiderSourceCodeAccess\\Source\\RiderSourceCodeAccess",
+			"Rules": "C:\\Program Files\\Epic Games\\UE_4.24\\Engine\\Plugins\\Marketplace\\RiderSourceCodeAccess\\Source\\RiderSourceCodeAccess\\RiderSourceCodeAccess.Build.cs",
+			"PCHUsage": "UseExplicitOrSharedPCHs",
+			"GeneratedCodeDirectory": "C:\\Program Files\\Epic Games\\UE_4.24\\Engine\\Plugins\\Marketplace\\RiderSourceCodeAccess\\Intermediate\\Build\\Win64\\UE4Editor\\Inc\\RiderSourceCodeAccess",
+			"PrivateDependencyModules": [
+				"Core",
+				"UnrealEd",
+				"GameProjectGeneration",
+				"SourceCodeAccess",
+				"DesktopPlatform",
+				"Projects",
+				"Json"
+			],
+			"PublicIncludePaths": [
+				"C:\\Program Files\\Epic Games\\UE_4.24\\Engine\\Plugins\\Marketplace\\RiderSourceCodeAccess\\Source"
+			],
+			"LegacyPublicIncludePaths": [
+				"C:\\Program Files\\Epic Games\\UE_4.24\\Engine\\Plugins\\Marketplace\\RiderSourceCodeAccess\\Source\\RiderSourceCodeAccess"
+			],
+			"PrivateIncludePaths": [
+				"C:\\Program Files\\Epic Games\\UE_4.24\\Engine\\Plugins\\Marketplace\\RiderSourceCodeAccess\\Source\\RiderSourceCodeAccess\\Private"
+			],
+			"PublicDelayLoadDLLs": [
+				"d3d12.dll"
+			],
+			"ApiDefinitions": [
+				"RIDERSOURCECODEACCESS_VTABLE=",
+				"RIDERSOURCECODEACCESS_API="
 			],
 			"ShouldAddLegacyPublicIncludePaths": false
 		},
@@ -26838,6 +26879,14 @@
 	},
 	"Plugins": 
 	{
+		"RiderSourceCodeAccess": 
+		{
+			"File": "C:\\Program Files\\Epic Games\\UE_4.24\\Engine\\Plugins\\Marketplace\\RiderSourceCodeAccess\\RiderSourceCodeAccess.uplugin",
+			"Type": "Engine",
+			"Modules": [
+				"RiderSourceCodeAccess"
+			]
+		},
 		"Paper2D": 
 		{
 			"File": "C:\\Program Files\\Epic Games\\UE_4.24\\Engine\\Plugins\\2D\\Paper2D\\Paper2D.uplugin",
