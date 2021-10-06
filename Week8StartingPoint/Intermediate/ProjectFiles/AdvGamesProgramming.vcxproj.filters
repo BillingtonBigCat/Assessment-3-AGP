@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\AdvGamesProgramming.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{1DAE9204-B529-40A1-A7DC-088C06523DB3}</UniqueIdentifier>
+      <UniqueIdentifier>{6449C0AB-6028-4B31-BA74-692DC8A24636}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\AdvGamesProgramming.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{110B40C2-2260-43AB-9640-0FC6AF54CB95}</UniqueIdentifier>
+      <UniqueIdentifier>{44B6449A-1B2B-4101-B87A-F04929DE9945}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\AdvGamesProgramming">
-      <UniqueIdentifier>{EA9580BC-A910-42D1-86CB-FE5974FF8648}</UniqueIdentifier>
+      <UniqueIdentifier>{188F7699-A056-44F7-9442-F287D0FE9BA8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\AdvGamesProgramming\AdvGamesProgramming.Build.cs">
       <Filter>Source\AdvGamesProgramming</Filter>

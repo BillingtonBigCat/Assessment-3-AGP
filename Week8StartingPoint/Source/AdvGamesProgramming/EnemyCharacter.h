@@ -15,6 +15,15 @@ enum class AgentState : uint8
 	EVADE
 };
 
+UENUM(BlueprintType)
+enum class EEnemyRarity : uint8
+{
+	LEGENDARY,
+	MASTER,
+	RARE,
+	COMMON
+};
+
 UCLASS()
 class ADVGAMESPROGRAMMING_API AEnemyCharacter : public ACharacter
 {
@@ -62,8 +71,24 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void Fire(FVector FireDirection);
 
+	//Rarity Properites
+	UFUNCTION(BlueprintCallable)
+	void SetRarity();
+
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+	EEnemyRarity EnemyRarity;
+
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+		float BulletDamage;
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+		float MuzzleVelocity;
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+		int32 MagazineSize;
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
+		float WeaponAccuracy;
+
 private:
 
 	void MoveAlongPath();
-
+	void GenerateRandomBoolArray(int32 ArrayLength, int32 NumTrue, TArray<bool>& RandBoolArray);
 };

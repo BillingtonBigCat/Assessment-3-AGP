@@ -1,4 +1,4 @@
-D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h
-D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Source\AdvGamesProgramming\NavigationNode.h
-D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\NavigationNode.generated.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\NavigationNode.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\NavigationNode.generated.h
+D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h

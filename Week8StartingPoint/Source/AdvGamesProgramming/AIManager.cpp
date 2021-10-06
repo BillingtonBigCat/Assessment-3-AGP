@@ -14,7 +14,7 @@ AAIManager::AAIManager()
 
 	AllowedAngle = 0.4f;
 
-	RoundNumber = 2;
+	RoundNumber = 6;
 	EnemyEntities = 0;
 	//UE_LOG(LogTemp, Warning, TEXT("Round Number is %d"), RoundNumber);
 }

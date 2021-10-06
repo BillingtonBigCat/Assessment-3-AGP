@@ -1,6 +1,6 @@
-D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h
-D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Source\AdvGamesProgramming\AIManager.h
-D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\AIManager.generated.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\EngineUtils.h
-D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Source\AdvGamesProgramming\HealthComponent.h
-D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\HealthComponent.generated.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\AIManager.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\AIManager.generated.h
+D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\EngineUtils.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\HealthComponent.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\HealthComponent.generated.h
