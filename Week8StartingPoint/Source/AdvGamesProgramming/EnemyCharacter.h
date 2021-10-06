@@ -87,6 +87,9 @@ public:
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
 		float WeaponAccuracy;
 
+	float RoundModifier;
+	float DifficultyConstant;
+
 private:
 
 	void MoveAlongPath();

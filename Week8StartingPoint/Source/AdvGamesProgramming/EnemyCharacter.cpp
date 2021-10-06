@@ -17,7 +17,7 @@ AEnemyCharacter::AEnemyCharacter()
 	CurrentAgentState = AgentState::PATROL;
 	PathfindingNodeAccuracy = 100.0f;
 
-	
+	DifficultyConstant = 1.15;
 }
 
 // Called when the game starts or when spawned
@@ -28,6 +28,11 @@ void AEnemyCharacter::BeginPlay()
 	Cast<UCharacterMovementComponent>(GetMovementComponent())->bOrientRotationToMovement = true;
 
 	HealthComponent = FindComponentByClass<UHealthComponent>();
+
+	if (HealthComponent)
+	{
+		HealthComponent->MaxHealth *= RoundModifier;
+	}
 
 	PerceptionComponent = FindComponentByClass<UAIPerceptionComponent>();
 	if (PerceptionComponent)
@@ -86,6 +91,12 @@ void AEnemyCharacter::Tick(float DeltaTime)
 	}
 
 	MoveAlongPath();
+
+	if (Manager)
+	{
+		RoundModifier = pow(DifficultyConstant, (Manager->RoundNumber) - 1);
+		UE_LOG(LogTemp, Warning, TEXT("RoundModifier is %f"), RoundModifier);
+	}
 }
 
 // Called to bind functionality to input
@@ -207,9 +218,9 @@ void AEnemyCharacter::SetRarity()
 	}
 
 	//Assign the good or bad weapon characteristics based on the result of the random boolean array.
-	BulletDamage = (RandBoolArray[0] ? FMath::RandRange(15.0f, 30.0f) : FMath::RandRange(2.0f, 15.0f));
-	MuzzleVelocity = (RandBoolArray[1] ? FMath::RandRange(10000.0f, 20000.0f) : FMath::RandRange(5000.0f, 10000.0f));
-	MagazineSize = (RandBoolArray[2] ? FMath::RandRange(20, 100) : FMath::RandRange(1, 20));
-	WeaponAccuracy = (RandBoolArray[3] ? FMath::RandRange(0.95f, 1.0f) : FMath::RandRange(0.8f, 0.95f));
+	BulletDamage = (RandBoolArray[0] ? FMath::RandRange(15.0f, 30.0f)*RoundModifier : FMath::RandRange(2.0f, 15.0f) * RoundModifier);
+	MuzzleVelocity = (RandBoolArray[1] ? FMath::RandRange(10000.0f, 20000.0f) * RoundModifier : FMath::RandRange(5000.0f, 10000.0f)*RoundModifier);
+	MagazineSize = (RandBoolArray[2] ? FMath::RandRange(20, 100) * RoundModifier : FMath::RandRange(1, 20) * RoundModifier);
+	WeaponAccuracy = (RandBoolArray[3] ? FMath::RandRange(0.95f, 1.0f) * RoundModifier : FMath::RandRange(0.8f, 0.95f) * RoundModifier);
 }
 

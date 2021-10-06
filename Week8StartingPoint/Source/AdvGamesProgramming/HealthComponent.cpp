@@ -51,11 +51,10 @@ void UHealthComponent::OnTakeDamage(float Damage)
 
 void UHealthComponent::OnDeath()
 {
-	if (Manager) {
+	if (Manager) 
+	{
 		Manager->ReduceEnemyEntities();
 	}
-	else
-		UE_LOG(LogTemp, Warning, TEXT("Nope"));
 }
 
 float UHealthComponent::HealthPercentageRemaining()

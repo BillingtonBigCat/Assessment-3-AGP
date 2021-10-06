@@ -14,7 +14,7 @@ AAIManager::AAIManager()
 
 	AllowedAngle = 0.4f;
 
-	RoundNumber = 6;
+	RoundNumber = 0;
 	EnemyEntities = 0;
 	//UE_LOG(LogTemp, Warning, TEXT("Round Number is %d"), RoundNumber);
 }
@@ -29,7 +29,6 @@ void AAIManager::BeginPlay()
 		//UE_LOG(LogTemp, Display, TEXT("POPULATING NODES"))
 		PopulateNodes();
 	}
-	CreateAgents();
 	//UE_LOG(LogTemp, Warning, TEXT("Number of nodes: %i"), AllNodes.Num())
 }
 
