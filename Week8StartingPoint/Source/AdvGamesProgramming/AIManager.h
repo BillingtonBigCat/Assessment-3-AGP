@@ -27,7 +27,9 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Agents")
 		TArray<class AEnemyCharacter*> AllAgents;
 	UPROPERTY(EditAnywhere, Category = "Agents")
-		TSubclassOf<AEnemyCharacter> AgentToSpawn;
+		TSubclassOf<AEnemyCharacter> RegularEnemy;
+	UPROPERTY(EditAnywhere, Category = "Agents")
+		TSubclassOf<AEnemyCharacter> SwarmEnemy;
 
 	UPROPERTY(EditAnywhere)
 		float AllowedAngle;

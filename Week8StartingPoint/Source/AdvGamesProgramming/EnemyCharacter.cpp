@@ -26,12 +26,11 @@ void AEnemyCharacter::BeginPlay()
 	Super::BeginPlay();
 	
 	Cast<UCharacterMovementComponent>(GetMovementComponent())->bOrientRotationToMovement = true;
-
 	HealthComponent = FindComponentByClass<UHealthComponent>();
-
 	if (HealthComponent)
 	{
-		HealthComponent->MaxHealth *= RoundModifier;
+		HealthComponent->MaxHealth += RoundModifier;
+		HealthComponent->setHealth();
 	}
 
 	PerceptionComponent = FindComponentByClass<UAIPerceptionComponent>();
@@ -40,8 +39,11 @@ void AEnemyCharacter::BeginPlay()
 		PerceptionComponent->OnTargetPerceptionUpdated.AddDynamic(this, &AEnemyCharacter::SensePlayer);
 	}
 
+
 	DetectedActor = nullptr;
 	bCanSeeActor = false;
+
+	
 }
 
 // Called every frame
@@ -89,14 +91,7 @@ void AEnemyCharacter::Tick(float DeltaTime)
 			Path.Empty();
 		}
 	}
-
 	MoveAlongPath();
-
-	if (Manager)
-	{
-		RoundModifier = pow(DifficultyConstant, (Manager->RoundNumber) - 1);
-		UE_LOG(LogTemp, Warning, TEXT("RoundModifier is %f"), RoundModifier);
-	}
 }
 
 // Called to bind functionality to input
@@ -122,7 +117,7 @@ void AEnemyCharacter::AgentEngage()
 	if (bCanSeeActor && DetectedActor)
 	{
 		FVector FireDirection = DetectedActor->GetActorLocation() - GetActorLocation();
-		Fire(FireDirection);
+		//Fire(FireDirection);
 	}
 	if (Path.Num() == 0 && DetectedActor)
 	{
@@ -136,7 +131,7 @@ void AEnemyCharacter::AgentEvade()
 	if (bCanSeeActor && DetectedActor)
 	{
 		FVector FireDirection = DetectedActor->GetActorLocation() - GetActorLocation();
-		Fire(FireDirection);
+		//Fire(FireDirection);
 	}
 	if (Path.Num() == 0 && DetectedActor)
 	{
@@ -191,7 +186,19 @@ void AEnemyCharacter::GenerateRandomBoolArray(int32 ArrayLength, int32 NumTrue, 
 	}
 }
 
-void AEnemyCharacter::SetRarity()
+void AEnemyCharacter::SetModifier()
+{
+	if (Manager)
+	{
+		RoundModifier = pow(DifficultyConstant, Manager->RoundNumber - 1);
+		if (SwarmEnemy)
+		{
+			RoundModifier /= 2;
+		}
+	}
+}
+
+void AEnemyCharacter::SetStats()
 {
 	float RarityValue = FMath::RandRange(0.0f, 1.0f);
 	TArray<bool> RandBoolArray;
@@ -200,27 +207,37 @@ void AEnemyCharacter::SetRarity()
 	{
 		EnemyRarity = EEnemyRarity::LEGENDARY;
 		GenerateRandomBoolArray(4, 4, RandBoolArray);
+		HealthComponent->MaxHealth *= (1.3 * RoundModifier);
+		HealthComponent->setHealth();
 	}
 	else if (RarityValue <= 0.20f)
 	{
 		EnemyRarity = EEnemyRarity::MASTER;
 		GenerateRandomBoolArray(4, 3, RandBoolArray);
+		HealthComponent->MaxHealth *= (1.2 * RoundModifier);
+		HealthComponent->setHealth();
 	}
 	else if (RarityValue <= 0.50f)
 	{
 		EnemyRarity = EEnemyRarity::RARE;
 		GenerateRandomBoolArray(4, 1, RandBoolArray);
+		HealthComponent->MaxHealth *= (1.1 * RoundModifier);
+		HealthComponent->setHealth();
 	}
 	else
 	{
 		EnemyRarity = EEnemyRarity::COMMON;
 		GenerateRandomBoolArray(4, 0, RandBoolArray);
+		HealthComponent->MaxHealth *= RoundModifier;
+		HealthComponent->setHealth();
 	}
 
 	//Assign the good or bad weapon characteristics based on the result of the random boolean array.
-	BulletDamage = (RandBoolArray[0] ? FMath::RandRange(15.0f, 30.0f)*RoundModifier : FMath::RandRange(2.0f, 15.0f) * RoundModifier);
-	MuzzleVelocity = (RandBoolArray[1] ? FMath::RandRange(10000.0f, 20000.0f) * RoundModifier : FMath::RandRange(5000.0f, 10000.0f)*RoundModifier);
+	BulletDamage = (RandBoolArray[0] ? FMath::RandRange(15.0f, 30.0f) * RoundModifier : FMath::RandRange(2.0f, 15.0f) * RoundModifier);
+	MuzzleVelocity = (RandBoolArray[1] ? FMath::RandRange(10000.0f, 20000.0f) * RoundModifier : FMath::RandRange(5000.0f, 10000.0f) * RoundModifier);
 	MagazineSize = (RandBoolArray[2] ? FMath::RandRange(20, 100) * RoundModifier : FMath::RandRange(1, 20) * RoundModifier);
 	WeaponAccuracy = (RandBoolArray[3] ? FMath::RandRange(0.95f, 1.0f) * RoundModifier : FMath::RandRange(0.8f, 0.95f) * RoundModifier);
+
+	AdjustEnemy();
 }
 

@@ -39,9 +39,13 @@ void EmptyLinkFunctionForGeneratedCodeAIManager() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AllowedAngle;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AgentToSpawn_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SwarmEnemy_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FClassPropertyParams NewProp_AgentToSpawn;
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_SwarmEnemy;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RegularEnemy_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_RegularEnemy;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_AllAgents_MetaData[];
 #endif
@@ -78,12 +82,19 @@ void EmptyLinkFunctionForGeneratedCodeAIManager() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AAIManager_Statics::NewProp_AllowedAngle = { "AllowedAngle", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAIManager, AllowedAngle), METADATA_PARAMS(Z_Construct_UClass_AAIManager_Statics::NewProp_AllowedAngle_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAIManager_Statics::NewProp_AllowedAngle_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAIManager_Statics::NewProp_AgentToSpawn_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAIManager_Statics::NewProp_SwarmEnemy_MetaData[] = {
 		{ "Category", "Agents" },
 		{ "ModuleRelativePath", "AIManager.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AAIManager_Statics::NewProp_AgentToSpawn = { "AgentToSpawn", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAIManager, AgentToSpawn), Z_Construct_UClass_AEnemyCharacter_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AAIManager_Statics::NewProp_AgentToSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAIManager_Statics::NewProp_AgentToSpawn_MetaData)) };
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AAIManager_Statics::NewProp_SwarmEnemy = { "SwarmEnemy", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAIManager, SwarmEnemy), Z_Construct_UClass_AEnemyCharacter_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AAIManager_Statics::NewProp_SwarmEnemy_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAIManager_Statics::NewProp_SwarmEnemy_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAIManager_Statics::NewProp_RegularEnemy_MetaData[] = {
+		{ "Category", "Agents" },
+		{ "ModuleRelativePath", "AIManager.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AAIManager_Statics::NewProp_RegularEnemy = { "RegularEnemy", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAIManager, RegularEnemy), Z_Construct_UClass_AEnemyCharacter_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AAIManager_Statics::NewProp_RegularEnemy_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAIManager_Statics::NewProp_RegularEnemy_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAIManager_Statics::NewProp_AllAgents_MetaData[] = {
 		{ "Category", "Agents" },
@@ -109,7 +120,8 @@ void EmptyLinkFunctionForGeneratedCodeAIManager() {}
 	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AAIManager_Statics::NewProp_NumAI = { "NumAI", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AAIManager, NumAI), METADATA_PARAMS(Z_Construct_UClass_AAIManager_Statics::NewProp_NumAI_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AAIManager_Statics::NewProp_NumAI_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAIManager_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAIManager_Statics::NewProp_AllowedAngle,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAIManager_Statics::NewProp_AgentToSpawn,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAIManager_Statics::NewProp_SwarmEnemy,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAIManager_Statics::NewProp_RegularEnemy,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAIManager_Statics::NewProp_AllAgents,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAIManager_Statics::NewProp_AllAgents_Inner,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAIManager_Statics::NewProp_AllNodes,
@@ -143,7 +155,7 @@ void EmptyLinkFunctionForGeneratedCodeAIManager() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AAIManager, 2265656801);
+	IMPLEMENT_CLASS(AAIManager, 2836911908);
 	template<> ADVGAMESPROGRAMMING_API UClass* StaticClass<AAIManager>()
 	{
 		return AAIManager::StaticClass();

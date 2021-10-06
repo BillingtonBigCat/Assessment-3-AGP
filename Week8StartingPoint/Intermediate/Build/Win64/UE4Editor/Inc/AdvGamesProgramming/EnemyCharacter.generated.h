@@ -19,14 +19,6 @@ struct FVector;
 #define Week8StartingPoint_Source_AdvGamesProgramming_EnemyCharacter_h_30_SPARSE_DATA
 #define Week8StartingPoint_Source_AdvGamesProgramming_EnemyCharacter_h_30_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execSetRarity) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetRarity(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execSensePlayer) \
 	{ \
 		P_GET_OBJECT(AActor,Z_Param_ActorSensed); \
@@ -39,14 +31,6 @@ struct FVector;
 
 
 #define Week8StartingPoint_Source_AdvGamesProgramming_EnemyCharacter_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execSetRarity) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->SetRarity(); \
-		P_NATIVE_END; \
-	} \
  \
 	DECLARE_FUNCTION(execSensePlayer) \
 	{ \

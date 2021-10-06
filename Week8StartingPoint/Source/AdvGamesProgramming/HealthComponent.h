@@ -38,4 +38,6 @@ public:
 	float HealthPercentageRemaining();
 
 	class AAIManager* Manager;
+
+	void setHealth();
 };

@@ -14,7 +14,7 @@ AAIManager::AAIManager()
 
 	AllowedAngle = 0.4f;
 
-	RoundNumber = 0;
+	RoundNumber = 1;
 	EnemyEntities = 0;
 	//UE_LOG(LogTemp, Warning, TEXT("Round Number is %d"), RoundNumber);
 }
@@ -29,6 +29,7 @@ void AAIManager::BeginPlay()
 		//UE_LOG(LogTemp, Display, TEXT("POPULATING NODES"))
 		PopulateNodes();
 	}
+	CreateAgents();
 	//UE_LOG(LogTemp, Warning, TEXT("Number of nodes: %i"), AllNodes.Num())
 }
 
@@ -137,12 +138,32 @@ void AAIManager::CreateAgents()
 		NumAI = RoundNumber;
 		for (int32 i = 0; i < NumAI; i++)
 		{
-			// Get a random node index
-			int32 NodeIndex = FMath::RandRange(0, AllNodes.Num() - 1);
-			AEnemyCharacter* SpawnedEnemy = GetWorld()->SpawnActor<AEnemyCharacter>(AgentToSpawn, AllNodes[NodeIndex]->GetActorLocation(), AllNodes[NodeIndex]->GetActorRotation());
-			SpawnedEnemy->Manager = this;
-			SpawnedEnemy->CurrentNode = AllNodes[NodeIndex];
-			EnemyEntities += 1;
+			float RandomEnemyType = FMath::RandRange(0.0f, 1.0f);
+			if (RandomEnemyType < 0.50f)
+			{
+				for (int32 x = 0; x < 2; x++) 
+				{
+					int32 NodeIndex = FMath::RandRange(0, AllNodes.Num() - 1);
+					AEnemyCharacter* SpawnedEnemy = GetWorld()->SpawnActor<AEnemyCharacter>(SwarmEnemy, AllNodes[NodeIndex]->GetActorLocation(), AllNodes[NodeIndex]->GetActorRotation());
+					SpawnedEnemy->Manager = this;
+					SpawnedEnemy->SwarmEnemy = true;
+					SpawnedEnemy->SetModifier();
+					SpawnedEnemy->SetStats();
+					SpawnedEnemy->CurrentNode = AllNodes[NodeIndex];
+					EnemyEntities += 1;
+				}
+			}
+			else 
+			{
+				// Get a random node index
+				int32 NodeIndex = FMath::RandRange(0, AllNodes.Num() - 1);
+				AEnemyCharacter* SpawnedEnemy = GetWorld()->SpawnActor<AEnemyCharacter>(RegularEnemy, AllNodes[NodeIndex]->GetActorLocation(), AllNodes[NodeIndex]->GetActorRotation());
+				SpawnedEnemy->Manager = this;
+				SpawnedEnemy->SetModifier();
+				SpawnedEnemy->SetStats();
+				SpawnedEnemy->CurrentNode = AllNodes[NodeIndex];
+				EnemyEntities += 1;
+			}
 		}
 	}
 

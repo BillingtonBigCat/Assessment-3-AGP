@@ -72,8 +72,11 @@ public:
 	void Fire(FVector FireDirection);
 
 	//Rarity Properites
-	UFUNCTION(BlueprintCallable)
-	void SetRarity();
+	
+	void SetStats();
+	void SetModifier();
+	UFUNCTION(BlueprintImplementableEvent)
+	void AdjustEnemy();
 
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
 	EEnemyRarity EnemyRarity;
@@ -87,8 +90,10 @@ public:
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere)
 		float WeaponAccuracy;
 
-	float RoundModifier;
 	float DifficultyConstant;
+	float RoundModifier;
+
+	bool SwarmEnemy;
 
 private:
 
