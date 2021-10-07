@@ -1,56 +1,56 @@
-D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h
-D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\EnemyCharacter.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\Perception/AIPerceptionTypes.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\AITypes.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\NavigationSystem\Public\NavFilters/NavigationQueryFilter.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\NavigationSystem\Public\NavAreas/NavArea.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavAreaBase.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavAreaBase.generated.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavArea.generated.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationQueryFilter.generated.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\NavigationSystem\Public\NavigationSystemTypes.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\AI/NavigationSystemConfig.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationSystemConfig.generated.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITypes.generated.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\GenericTeamAgentInterface.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\GenericTeamAgentInterface.generated.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIPerceptionTypes.generated.h
-D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\EnemyCharacter.generated.h
-D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\AIManager.h
-D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\AIManager.generated.h
-D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\NavigationNode.h
-D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\NavigationNode.generated.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementComponent.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavigationAvoidanceTypes.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationAvoidanceTypes.generated.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\AI/RVOAvoidanceInterface.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RVOAvoidanceInterface.generated.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/PawnMovementComponent.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/NavMovementComponent.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\AI/Navigation/PathFollowingAgentInterface.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PathFollowingAgentInterface.generated.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavMovementComponent.generated.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PawnMovementComponent.generated.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Interfaces/NetworkPredictionInterface.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NetworkPredictionInterface.generated.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\Perception/AIPerceptionComponent.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\Perception/AISense.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AISense.generated.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\Perception/AIPerceptionSystem.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\AISubsystem.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\AISystem.h
-D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\AI/AISystemBase.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AISystemBase.generated.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AISystem.generated.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AISubsystem.generated.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIPerceptionSystem.generated.h
-D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIPerceptionComponent.generated.h
-D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\HealthComponent.h
-D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\HealthComponent.generated.h
+D:\agp3\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h
+D:\agp3\Assessment-3-AGP\Week8StartingPoint\Source\AdvGamesProgramming\EnemyCharacter.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\Perception/AIPerceptionTypes.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\AITypes.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\NavigationSystem\Public\NavFilters/NavigationQueryFilter.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\NavigationSystem\Public\NavAreas/NavArea.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavAreaBase.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavAreaBase.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavArea.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationQueryFilter.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\NavigationSystem\Public\NavigationSystemTypes.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\AI/NavigationSystemConfig.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationSystemConfig.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITypes.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\GenericTeamAgentInterface.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\GenericTeamAgentInterface.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIPerceptionTypes.generated.h
+D:\agp3\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\EnemyCharacter.generated.h
+D:\agp3\Assessment-3-AGP\Week8StartingPoint\Source\AdvGamesProgramming\AIManager.h
+D:\agp3\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\AIManager.generated.h
+D:\agp3\Assessment-3-AGP\Week8StartingPoint\Source\AdvGamesProgramming\NavigationNode.h
+D:\agp3\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\NavigationNode.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementComponent.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavigationAvoidanceTypes.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationAvoidanceTypes.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\AI/RVOAvoidanceInterface.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RVOAvoidanceInterface.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/PawnMovementComponent.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/NavMovementComponent.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\AI/Navigation/PathFollowingAgentInterface.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PathFollowingAgentInterface.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavMovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PawnMovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Interfaces/NetworkPredictionInterface.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NetworkPredictionInterface.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\Perception/AIPerceptionComponent.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\Perception/AISense.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AISense.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\Perception/AIPerceptionSystem.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\AISubsystem.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\AIModule\Classes\AISystem.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\AI/AISystemBase.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AISystemBase.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AISystem.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AISubsystem.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIPerceptionSystem.generated.h
+C:\Program Files\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIPerceptionComponent.generated.h
+D:\agp3\Assessment-3-AGP\Week8StartingPoint\Source\AdvGamesProgramming\HealthComponent.h
+D:\agp3\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\HealthComponent.generated.h

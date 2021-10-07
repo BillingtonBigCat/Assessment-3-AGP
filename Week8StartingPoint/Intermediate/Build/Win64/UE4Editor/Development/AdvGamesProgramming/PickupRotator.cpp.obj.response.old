@@ -228,8 +228,8 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I Runtime\AudioMixerCore\Public
-/I "D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming"
-/I "D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Source"
+/I "D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming"
+/I "D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source"
 /I ..\Plugins\Runtime\ProceduralMeshComponent\Intermediate\Build\Win64\UE4Editor\Inc\ProceduralMeshComponent
 /I ..\Plugins\Runtime\ProceduralMeshComponent\Source
 /I ..\Plugins\Runtime\ProceduralMeshComponent\Source\ProceduralMeshComponent\Public
@@ -256,18 +256,18 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\INCLUDE"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\AdvGamesProgrammingEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\AdvGamesProgrammingEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\AdvGamesProgrammingEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Source\AdvGamesProgramming\PickupRotator.cpp"
-/FI"D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h"
-/Fo"D:\assignment3 agp\Assessment-3-AGP\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\PickupRotator.cpp.obj"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
+/FI"D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\AdvGamesProgrammingEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\AdvGamesProgrammingEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\AdvGamesProgrammingEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\PickupRotator.cpp"
+/FI"D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h"
+/Fo"D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\PickupRotator.cpp.obj"
 /TP
 /GR-
 /W4
