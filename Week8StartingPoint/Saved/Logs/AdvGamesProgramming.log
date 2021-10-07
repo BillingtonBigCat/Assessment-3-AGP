@@ -997,3 +997,11 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.10.07-10.13.05:849][871]AssetCheck: New page: Asset Save: multiple assets
 [2021.10.07-10.13.05:849][871]LogContentValidation: Display: Validating World /Game/Levels/Assesment3Map.Assesment3Map
 [2021.10.07-10.13.05:849][871]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Levels/Assesment3Map_BuiltData.Assesment3Map_BuiltData
+[2021.10.07-10.14.03:502][844]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/Assesment3Map" FILE="D:/agp3/Assessment-3-AGP/Week8StartingPoint/Content/Levels/Assesment3Map.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2021.10.07-10.14.03:552][844]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2021.10.07-10.14.03:784][844]LogSavePackage: Moving 'D:/agp3/Assessment-3-AGP/Week8StartingPoint/Saved/Assesment3Map860764F248260DA0FED8168027A9DA31.tmp' to 'D:/agp3/Assessment-3-AGP/Week8StartingPoint/Content/Levels/Assesment3Map.umap'
+[2021.10.07-10.14.03:810][844]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/Assesment3Map_BuiltData" FILE="D:/agp3/Assessment-3-AGP/Week8StartingPoint/Content/Levels/Assesment3Map_BuiltData.uasset" SILENT=true
+[2021.10.07-10.14.04:083][844]LogSavePackage: Moving 'D:/agp3/Assessment-3-AGP/Week8StartingPoint/Saved/Assesment3Map_BuiltDataDEDFFD594781C42F7E505BA70D6D44C0.tmp' to 'D:/agp3/Assessment-3-AGP/Week8StartingPoint/Content/Levels/Assesment3Map_BuiltData.uasset'
+[2021.10.07-10.14.04:177][844]AssetCheck: New page: Asset Save: multiple assets
+[2021.10.07-10.14.04:177][844]LogContentValidation: Display: Validating World /Game/Levels/Assesment3Map.Assesment3Map
+[2021.10.07-10.14.04:177][844]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Levels/Assesment3Map_BuiltData.Assesment3Map_BuiltData
