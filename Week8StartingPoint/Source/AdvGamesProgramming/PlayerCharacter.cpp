@@ -17,6 +17,8 @@ APlayerCharacter::APlayerCharacter()
 	//Set default member variable values
 	LookSensitivity = 1.0f;
 	SprintMultiplier = 1.5f;
+
+	//HealthComponent = FindComponentByClass<UHealthComponent>();
 }
 
 // Called when the game starts or when spawned
@@ -26,7 +28,7 @@ void APlayerCharacter::BeginPlay()
 
 	//Initialise the camera variable
 	Camera = FindComponentByClass<UCameraComponent>();
-
+	
 	// Get the skeletal mesh and then get the anim instance from it cast to the first person anim instance.
 	USkeletalMeshComponent* SkeletalMesh = Cast<USkeletalMeshComponent>(GetDefaultSubobjectByName(TEXT("Arms")));
 	if (SkeletalMesh) // Make sure the skeletal mesh was found

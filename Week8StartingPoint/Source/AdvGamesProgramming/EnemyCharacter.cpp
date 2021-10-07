@@ -247,6 +247,10 @@ void AEnemyCharacter::SetStats()
 
 void AEnemyCharacter::CreateDrop()
 {
+	UE_LOG(LogTemp, Warning, TEXT("Hi"));
+
+	GetWorld()->SpawnActor<APickup>(RegularDrop, this->GetActorLocation(), this->GetActorRotation());
+	/*
 	float HealthDropChance = FMath::RandRange(0.0f, 100.0f);
 	
 	if (HealthDropChance >= Player->HealthComponent->HealthPercentageRemaining())
@@ -257,5 +261,6 @@ void AEnemyCharacter::CreateDrop()
 	{
 		GetWorld()->SpawnActor<APickup>(RegularDrop,this->GetActorLocation(), this->GetActorRotation());
 	}
+	*/
 }
 
