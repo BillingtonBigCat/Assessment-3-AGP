@@ -18,6 +18,14 @@ AEnemyCharacter::AEnemyCharacter()
 	PathfindingNodeAccuracy = 100.0f;
 
 	DifficultyConstant = 1.15;
+
+	for (TObjectIterator<APlayerCharacter> Itr; Itr; ++Itr)
+	{
+		if (Itr->IsA(APlayerCharacter::StaticClass()))
+		{
+			Player = *Itr;
+		}
+	}
 }
 
 // Called when the game starts or when spawned
@@ -29,8 +37,7 @@ void AEnemyCharacter::BeginPlay()
 	HealthComponent = FindComponentByClass<UHealthComponent>();
 	if (HealthComponent)
 	{
-		HealthComponent->MaxHealth += RoundModifier;
-		HealthComponent->setHealth();
+		HealthComponent->Parent = this;
 	}
 
 	PerceptionComponent = FindComponentByClass<UAIPerceptionComponent>();
@@ -39,11 +46,8 @@ void AEnemyCharacter::BeginPlay()
 		PerceptionComponent->OnTargetPerceptionUpdated.AddDynamic(this, &AEnemyCharacter::SensePlayer);
 	}
 
-
 	DetectedActor = nullptr;
 	bCanSeeActor = false;
-
-	
 }
 
 // Called every frame
@@ -239,5 +243,19 @@ void AEnemyCharacter::SetStats()
 	WeaponAccuracy = (RandBoolArray[3] ? FMath::RandRange(0.95f, 1.0f) * RoundModifier : FMath::RandRange(0.8f, 0.95f) * RoundModifier);
 
 	AdjustEnemy();
+}
+
+void AEnemyCharacter::CreateDrop()
+{
+	float HealthDropChance = FMath::RandRange(0.0f, 100.0f);
+	
+	if (HealthDropChance >= Player->HealthComponent->HealthPercentageRemaining())
+	{
+		GetWorld()->SpawnActor<APickup>(HealthDrop, this->GetActorLocation(), this->GetActorRotation());
+	}
+	else
+	{
+		GetWorld()->SpawnActor<APickup>(RegularDrop,this->GetActorLocation(), this->GetActorRotation());
+	}
 }
 

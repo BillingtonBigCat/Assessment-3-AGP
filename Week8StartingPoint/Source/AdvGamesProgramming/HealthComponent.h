@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "EnemyCharacter.h"
 #include "Components/ActorComponent.h"
 #include "HealthComponent.generated.h"
 
@@ -40,4 +41,6 @@ public:
 	class AAIManager* Manager;
 
 	void setHealth();
+
+	AEnemyCharacter* Parent;
 };

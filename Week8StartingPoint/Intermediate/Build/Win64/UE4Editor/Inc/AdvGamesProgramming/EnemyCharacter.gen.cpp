@@ -25,6 +25,8 @@ void EmptyLinkFunctionForGeneratedCodeEnemyCharacter() {}
 	ADVGAMESPROGRAMMING_API UFunction* Z_Construct_UFunction_AEnemyCharacter_SensePlayer();
 	AIMODULE_API UScriptStruct* Z_Construct_UScriptStruct_FAIStimulus();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ADVGAMESPROGRAMMING_API UClass* Z_Construct_UClass_APickup_NoRegister();
 // End Cross Module References
 	static UEnum* EEnemyRarity_StaticEnum()
 	{
@@ -255,6 +257,14 @@ void EmptyLinkFunctionForGeneratedCodeEnemyCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HealthDrop_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_HealthDrop;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RegularDrop_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_RegularDrop;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponAccuracy_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_WeaponAccuracy;
@@ -304,6 +314,20 @@ void EmptyLinkFunctionForGeneratedCodeEnemyCharacter() {}
 		{ "ModuleRelativePath", "EnemyCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_HealthDrop_MetaData[] = {
+		{ "Category", "Drops" },
+		{ "ModuleRelativePath", "EnemyCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_HealthDrop = { "HealthDrop", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemyCharacter, HealthDrop), Z_Construct_UClass_APickup_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_HealthDrop_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_HealthDrop_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_RegularDrop_MetaData[] = {
+		{ "Category", "Drops" },
+		{ "ModuleRelativePath", "EnemyCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_RegularDrop = { "RegularDrop", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemyCharacter, RegularDrop), Z_Construct_UClass_APickup_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_RegularDrop_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_RegularDrop_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_WeaponAccuracy_MetaData[] = {
 		{ "Category", "EnemyCharacter" },
@@ -360,6 +384,8 @@ void EmptyLinkFunctionForGeneratedCodeEnemyCharacter() {}
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_PathfindingNodeAccuracy = { "PathfindingNodeAccuracy", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AEnemyCharacter, PathfindingNodeAccuracy), METADATA_PARAMS(Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_PathfindingNodeAccuracy_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_PathfindingNodeAccuracy_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemyCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_HealthDrop,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_RegularDrop,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_WeaponAccuracy,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_MagazineSize,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemyCharacter_Statics::NewProp_MuzzleVelocity,
@@ -397,7 +423,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AEnemyCharacter, 1952054423);
+	IMPLEMENT_CLASS(AEnemyCharacter, 2003038062);
 	template<> ADVGAMESPROGRAMMING_API UClass* StaticClass<AEnemyCharacter>()
 	{
 		return AEnemyCharacter::StaticClass();

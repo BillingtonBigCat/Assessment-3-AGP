@@ -5,6 +5,9 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Perception/AIPerceptionTypes.h"
+#include "PlayerCharacter.h"
+#include "Pickup.h"
+#include "EngineUtils.h"
 #include "EnemyCharacter.generated.h"
 
 UENUM()
@@ -94,6 +97,15 @@ public:
 	float RoundModifier;
 
 	bool SwarmEnemy;
+
+	UPROPERTY(EditAnywhere, Category = "Drops")
+		TSubclassOf<APickup> RegularDrop;
+	UPROPERTY(EditAnywhere, Category = "Drops")
+		TSubclassOf<APickup> HealthDrop;
+
+	APlayerCharacter* Player;
+
+	void CreateDrop();
 
 private:
 

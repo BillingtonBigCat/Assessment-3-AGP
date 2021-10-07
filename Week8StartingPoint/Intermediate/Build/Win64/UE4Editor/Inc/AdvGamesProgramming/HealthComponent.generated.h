@@ -13,8 +13,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define ADVGAMESPROGRAMMING_HealthComponent_generated_h
 
-#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_SPARSE_DATA
-#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_RPC_WRAPPERS \
+#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_SPARSE_DATA
+#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnDeath) \
 	{ \
@@ -34,7 +34,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnDeath) \
 	{ \
@@ -54,7 +54,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_INCLASS_NO_PURE_DECLS \
+#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUHealthComponent(); \
 	friend struct Z_Construct_UClass_UHealthComponent_Statics; \
@@ -63,7 +63,7 @@ public: \
 	DECLARE_SERIALIZER(UHealthComponent)
 
 
-#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_INCLASS \
+#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesUHealthComponent(); \
 	friend struct Z_Construct_UClass_UHealthComponent_Statics; \
@@ -72,7 +72,7 @@ public: \
 	DECLARE_SERIALIZER(UHealthComponent)
 
 
-#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_STANDARD_CONSTRUCTORS \
+#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UHealthComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UHealthComponent) \
@@ -85,7 +85,7 @@ private: \
 public:
 
 
-#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_ENHANCED_CONSTRUCTORS \
+#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UHealthComponent(UHealthComponent&&); \
@@ -96,28 +96,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UHealthComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UHealthComponent)
 
 
-#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_PRIVATE_PROPERTY_OFFSET
-#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_10_PROLOG
-#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_GENERATED_BODY_LEGACY \
+#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_PRIVATE_PROPERTY_OFFSET
+#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_11_PROLOG
+#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_PRIVATE_PROPERTY_OFFSET \
-	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_SPARSE_DATA \
-	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_RPC_WRAPPERS \
-	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_INCLASS \
-	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_STANDARD_CONSTRUCTORS \
+	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_PRIVATE_PROPERTY_OFFSET \
+	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_SPARSE_DATA \
+	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_RPC_WRAPPERS \
+	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_INCLASS \
+	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_GENERATED_BODY \
+#define Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_PRIVATE_PROPERTY_OFFSET \
-	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_SPARSE_DATA \
-	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_INCLASS_NO_PURE_DECLS \
-	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_13_ENHANCED_CONSTRUCTORS \
+	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_PRIVATE_PROPERTY_OFFSET \
+	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_SPARSE_DATA \
+	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_INCLASS_NO_PURE_DECLS \
+	Week8StartingPoint_Source_AdvGamesProgramming_HealthComponent_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

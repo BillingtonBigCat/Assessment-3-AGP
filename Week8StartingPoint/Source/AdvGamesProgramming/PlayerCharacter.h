@@ -22,6 +22,8 @@ protected:
 
 public:	
 
+	class UHealthComponent* HealthComponent;
+	
 	UPROPERTY(EditAnywhere)
 	float LookSensitivity;
 	UPROPERTY(EditInstanceOnly)
@@ -43,6 +45,7 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void BlueprintReload();
+
 
 private:
 
