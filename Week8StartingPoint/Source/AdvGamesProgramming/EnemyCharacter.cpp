@@ -121,7 +121,7 @@ void AEnemyCharacter::AgentEngage()
 	if (bCanSeeActor && DetectedActor)
 	{
 		FVector FireDirection = DetectedActor->GetActorLocation() - GetActorLocation();
-		//Fire(FireDirection);
+		Fire(FireDirection);
 	}
 	if (Path.Num() == 0 && DetectedActor)
 	{
@@ -135,7 +135,7 @@ void AEnemyCharacter::AgentEvade()
 	if (bCanSeeActor && DetectedActor)
 	{
 		FVector FireDirection = DetectedActor->GetActorLocation() - GetActorLocation();
-		//Fire(FireDirection);
+		Fire(FireDirection);
 	}
 	if (Path.Num() == 0 && DetectedActor)
 	{
@@ -247,20 +247,20 @@ void AEnemyCharacter::SetStats()
 
 void AEnemyCharacter::CreateDrop()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Hi"));
-
-	GetWorld()->SpawnActor<APickup>(RegularDrop, this->GetActorLocation(), this->GetActorRotation());
-	/*
+	//GetWorld()->SpawnActor<APickup>(RegularDrop, this->GetActorLocation(), this->GetActorRotation());
+	
 	float HealthDropChance = FMath::RandRange(0.0f, 100.0f);
 	
 	if (HealthDropChance >= Player->HealthComponent->HealthPercentageRemaining())
 	{
 		GetWorld()->SpawnActor<APickup>(HealthDrop, this->GetActorLocation(), this->GetActorRotation());
+		UE_LOG(LogTemp, Warning, TEXT("Hi"));
 	}
 	else
 	{
 		GetWorld()->SpawnActor<APickup>(RegularDrop,this->GetActorLocation(), this->GetActorRotation());
+		UE_LOG(LogTemp, Warning, TEXT("Normal"));
 	}
-	*/
+	
 }
 

@@ -24,6 +24,8 @@ D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIP
 D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\PlayerCharacter.h
 D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 D:\Epic Games\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\HealthComponent.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\HealthComponent.generated.h
 D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\PlayerCharacter.generated.h
 D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\Pickup.h
 D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\Pickup.generated.h

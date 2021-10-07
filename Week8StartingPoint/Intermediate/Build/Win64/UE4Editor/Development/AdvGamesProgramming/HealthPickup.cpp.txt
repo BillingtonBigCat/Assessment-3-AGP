@@ -1,0 +1,5 @@
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Development\AdvGamesProgramming\Definitions.AdvGamesProgramming.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\HealthPickup.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\Pickup.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\Pickup.generated.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\HealthPickup.generated.h

@@ -103,7 +103,7 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Drops")
 		TSubclassOf<APickup> HealthDrop;
 
-	APlayerCharacter* Player;
+	class APlayerCharacter* Player;
 
 	void CreateDrop();
 

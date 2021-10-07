@@ -111,4 +111,20 @@
       <Filter>Source\AdvGamesProgramming</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\AdvGamesProgramming\HealthPickup.h">
+      <Filter>Source\AdvGamesProgramming</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\AdvGamesProgramming\RegularPickup.h">
+      <Filter>Source\AdvGamesProgramming</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\AdvGamesProgramming\HealthPickup.cpp">
+      <Filter>Source\AdvGamesProgramming</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\AdvGamesProgramming\RegularPickup.cpp">
+      <Filter>Source\AdvGamesProgramming</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

@@ -28,7 +28,7 @@ void APlayerCharacter::BeginPlay()
 
 	//Initialise the camera variable
 	Camera = FindComponentByClass<UCameraComponent>();
-	
+	HealthComponent = FindComponentByClass<UHealthComponent>();
 	// Get the skeletal mesh and then get the anim instance from it cast to the first person anim instance.
 	USkeletalMeshComponent* SkeletalMesh = Cast<USkeletalMeshComponent>(GetDefaultSubobjectByName(TEXT("Arms")));
 	if (SkeletalMesh) // Make sure the skeletal mesh was found
