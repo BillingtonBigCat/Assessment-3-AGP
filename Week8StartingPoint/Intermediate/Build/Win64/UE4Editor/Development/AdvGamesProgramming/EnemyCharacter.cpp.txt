@@ -27,6 +27,8 @@ D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Edi
 D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\PlayerCharacter.generated.h
 D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\Pickup.h
 D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\Pickup.generated.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\RegularPickup.h
+D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\RegularPickup.generated.h
 D:\Epic Games\UE_4.24\Engine\Source\Runtime\Engine\Public\EngineUtils.h
 D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Intermediate\Build\Win64\UE4Editor\Inc\AdvGamesProgramming\EnemyCharacter.generated.h
 D:\Uni\Advanced Games 2021\a3\Week8StartingPoint\Source\AdvGamesProgramming\AIManager.h

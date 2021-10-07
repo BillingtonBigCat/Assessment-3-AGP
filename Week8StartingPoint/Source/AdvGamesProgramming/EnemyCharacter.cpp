@@ -213,6 +213,7 @@ void AEnemyCharacter::SetStats()
 		GenerateRandomBoolArray(4, 4, RandBoolArray);
 		HealthComponent->MaxHealth *= (1.3 * RoundModifier);
 		HealthComponent->setHealth();
+		EnemyRarityIndex = 4;
 	}
 	else if (RarityValue <= 0.20f)
 	{
@@ -220,6 +221,7 @@ void AEnemyCharacter::SetStats()
 		GenerateRandomBoolArray(4, 3, RandBoolArray);
 		HealthComponent->MaxHealth *= (1.2 * RoundModifier);
 		HealthComponent->setHealth();
+		EnemyRarityIndex = 3;
 	}
 	else if (RarityValue <= 0.50f)
 	{
@@ -227,6 +229,7 @@ void AEnemyCharacter::SetStats()
 		GenerateRandomBoolArray(4, 1, RandBoolArray);
 		HealthComponent->MaxHealth *= (1.1 * RoundModifier);
 		HealthComponent->setHealth();
+		EnemyRarityIndex = 2;
 	}
 	else
 	{
@@ -234,6 +237,7 @@ void AEnemyCharacter::SetStats()
 		GenerateRandomBoolArray(4, 0, RandBoolArray);
 		HealthComponent->MaxHealth *= RoundModifier;
 		HealthComponent->setHealth();
+		EnemyRarityIndex = 1;
 	}
 
 	//Assign the good or bad weapon characteristics based on the result of the random boolean array.
@@ -250,16 +254,18 @@ void AEnemyCharacter::CreateDrop()
 	//GetWorld()->SpawnActor<APickup>(RegularDrop, this->GetActorLocation(), this->GetActorRotation());
 	
 	float HealthDropChance = FMath::RandRange(0.0f, 100.0f);
-	
+	UE_LOG(LogTemp, Warning, TEXT("Create Drop Called"));
+
 	if (HealthDropChance >= Player->HealthComponent->HealthPercentageRemaining())
 	{
 		GetWorld()->SpawnActor<APickup>(HealthDrop, this->GetActorLocation(), this->GetActorRotation());
-		UE_LOG(LogTemp, Warning, TEXT("Hi"));
 	}
 	else
 	{
-		GetWorld()->SpawnActor<APickup>(RegularDrop,this->GetActorLocation(), this->GetActorRotation());
-		UE_LOG(LogTemp, Warning, TEXT("Normal"));
+		for (int i = 0; i < EnemyRarityIndex; i++) 
+		{
+			ARegularPickup* Pickup = GetWorld()->SpawnActor<ARegularPickup>(RegularDrop, this->GetActorLocation(), this->GetActorRotation());
+		}		
 	}
 	
 }

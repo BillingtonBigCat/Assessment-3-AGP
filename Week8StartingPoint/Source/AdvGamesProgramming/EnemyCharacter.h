@@ -7,6 +7,7 @@
 #include "Perception/AIPerceptionTypes.h"
 #include "PlayerCharacter.h"
 #include "Pickup.h"
+#include "RegularPickup.h"
 #include "EngineUtils.h"
 #include "EnemyCharacter.generated.h"
 
@@ -104,6 +105,8 @@ public:
 		TSubclassOf<APickup> HealthDrop;
 
 	class APlayerCharacter* Player;
+
+	float EnemyRarityIndex;
 
 	void CreateDrop();
 
