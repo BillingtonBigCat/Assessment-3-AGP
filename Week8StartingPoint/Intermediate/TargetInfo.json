@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "AdvGamesProgramming",
-			"Path": "D:\\Uni\\Advanced Games 2021\\a3\\Week8StartingPoint\\Source\\AdvGamesProgramming.Target.cs",
+			"Path": "D:\\agp3\\Assessment-3-AGP\\Week8StartingPoint\\Source\\AdvGamesProgramming.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "AdvGamesProgrammingEditor",
-			"Path": "D:\\Uni\\Advanced Games 2021\\a3\\Week8StartingPoint\\Source\\AdvGamesProgrammingEditor.Target.cs",
+			"Path": "D:\\agp3\\Assessment-3-AGP\\Week8StartingPoint\\Source\\AdvGamesProgrammingEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
